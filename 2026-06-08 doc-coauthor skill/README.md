@@ -24,6 +24,7 @@ for your intended audience.
 
 ## Recommendations
 
+- Use a custom agent / instructions file to help you control the tools used, and have the agent invoke the skill more often, see [doc-coauthor.agent.md](./doc-coauthor.agent.md)
 - Create a template markdown file, have the agent produce according to your template.
 - Use a markdown formatter like [mdformat](https://mdformat.readthedocs.io/en/stable/users/style.html) to keep your markdown files clean and consistent.
 - Use a link checker like [lychee](https://github.com/lycheeverse/lychee) to ensure your links are not dead.
