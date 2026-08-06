@@ -10,6 +10,10 @@ Claude Code/Opencode/Etc.
 
 ## Contents
 
+### Custom agents
+
+- [context-prepper](./2026-06-17%20context-prepper/README.md) - a custom agent for GitHub Copilot that prepares context for other agents to continue with.
+
 ### Agent skills
 
-- [doc-coauthor](./2026-06-08%20doc-coauthor%20skill/README.md)
+- [doc-coauthor](./2026-06-08%20doc-coauthor%20skill/README.md) - An agent skill that helps you write documentation together with LLM's, with the [Diátaxis framework](https://diataxis.fr/)

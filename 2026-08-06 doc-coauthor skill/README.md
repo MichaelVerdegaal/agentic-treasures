@@ -1,9 +1,9 @@
 # README
-This folder contains the `doc-coauthor` skill, used to help you write documentation 
+This folder contains the [doc-coauthor skill](./skill/SKILL.md), used to help you write documentation 
 *together* with LLM's, with the [Diátaxis framework](https://diataxis.fr/) in mind.
 
 
-## Motivation
+## Context
 I think writing documentation is important, especially so in this current age. However, 
 i also think that letting AI fully write your documentation just sucks; it tends to 
 super verbose, hallucinates and just misses the bigger picture. On the other hand, 
