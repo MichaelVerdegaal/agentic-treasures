@@ -1,7 +1,7 @@
 ---
-name: doc-coauthor
-description: Co-write documentation using Diátaxis. Classifies the need as tutorial, how-to guide, reference, or explanation, gathers context from source, outlines for approval, then drafts under a strict split: the agent writes what it can verify, the user supplies goals, decisions, and rationale. Use whenever the user wants to write, draft, restructure, review, or improve documentation of any kind: tutorials, how-to guides, reference pages, explanation or design-decision records, docs-tree READMEs, or component landing pages.
-argument-hint: Name the page or topic, the intended reader, and whether this is new writing or an improvement pass.
+name: "doc-coauthor"
+description: "Co-write documentation using Diátaxis. Classifies the need as tutorial, how-to guide, reference, or explanation, gathers context from source, outlines for approval, then drafts under a strict split: the agent writes what it can verify, the user supplies goals, decisions, and rationale. Use whenever the user wants to write, draft, restructure, review, or improve documentation of any kind: tutorials, how-to guides, reference pages, explanation or design-decision records, docs-tree READMEs, or component landing pages."
+argument-hint: "Name the page or topic, the intended reader, and whether this is new writing or an improvement pass."
 ---
 
 # Doc coauthor
