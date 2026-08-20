@@ -16,4 +16,8 @@ Claude Code/Opencode/Etc.
 
 ### Agent skills
 
-- [doc-coauthor](./2026-06-08%20doc-coauthor%20skill/README.md) - An agent skill that helps you write documentation together with LLM's, with the [Diátaxis framework](https://diataxis.fr/)
+- [doc-coauthor](./2026-08-06%20doc-coauthor%20skill/README.md) - An agent skill that helps you write documentation together with LLM's, with the [Diátaxis framework](https://diataxis.fr/)
+
+### Prompts
+
+- [cli-best-practices](./2026-06-21%20CLI-best-practices/cli-best-practices.md) - a collection of instructions to improve the quality of a CLI tool.
