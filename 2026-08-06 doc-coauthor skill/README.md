@@ -1,26 +1,21 @@
 # README
-This folder contains the [doc-coauthor skill](./skill/SKILL.md), used to help you write documentation 
-*together* with LLM's, with the [Diátaxis framework](https://diataxis.fr/) in mind.
-
+This folder contains the [doc-coauthor skill](./skill/SKILL.md), used to help you write documentation *together* with LLM's, with the [Diátaxis framework](https://diataxis.fr/) in mind.
 
 ## Context
-I think writing documentation is important, especially so in this current age. However, 
-i also think that letting AI fully write your documentation just sucks; it tends to 
-super verbose, hallucinates and just misses the bigger picture. On the other hand, 
-while i think writing manually drastically increases the quality, it also drastically increases the time it takes to *write* said documentation.
+I think writing documentation is important, especially so in this current age. However, i also think that letting AI fully write your documentation just sucks; it tends to super verbose, hallucinates and just misses the bigger picture. On the other hand, while i think writing manually drastically increases the quality, it also drastically increases the time it takes to *write* said documentation.
 
-To attempt to solve this problem i decided to implement an agent skill that helps you 
-write documentation, with a focus on you making the important decisions on the text. The flow 
-goes roughly like this:
+To attempt to solve this problem i decided to implement an agent skill that helps you write documentation, with a focus on you making the important decisions on the text. The flow goes roughly like this:
 
 1. You supply the initial outline of the text and important references to the agent, and activate the skill.
 2. the agent skill will generate a draft, fetching links and asking questions and whatnot to help it do so.
 3. You will then review the draft, and make decisions on what to keep, what to change, and what to remove. You can then decide to make the edits yourself or let the agent revise it, up to you!
 
-Second, the [Diátaxis framework](https://diataxis.fr/) is used to make the documentation 
-produced more structured, and purposeful. It will help the agent categorize your 
-intent for the documentation, and write it in a manner that is more suitable 
-for your intended audience.
+Second, the [Diátaxis framework](https://diataxis.fr/) is used to make the documentation produced more structured, and purposeful. It will help the agent categorize your intent for the documentation, and write it in a manner that is more suitable for your intended audience.
+
+
+### Update: 2026-09-16
+
+I updated the skill to require `diataxis-type` frontmatter on documentation pages, provide a small starting structure without creating empty sections, and check both incoming and outgoing links when pages are added or changed. I made these changes to make documentation easier to classify and navigate, while keeping the organic, incremental approach of Diátaxis.
 
 ## Recommendations
 
