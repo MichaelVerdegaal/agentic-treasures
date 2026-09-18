@@ -29,3 +29,6 @@ Dumber models can sometimes try to do *everything* in the prompt, but that's not
 always desired. Think for example a `--json` flag when you mainly just use the CLI 
 as an interface to run scripts, or adding regression tests when you only have like 2-3 
 commands. 
+
+### Update 2026-09-18
+The snippet has been reorganized and enhanced. The main addition is that it now has more guidelines on command naming, user interaction and error handling. The idea here is that it's more inclined to give the CLI commands names that make sense to the user instead of mirroring the name of the functions that you're executing.
