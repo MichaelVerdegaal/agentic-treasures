@@ -32,3 +32,6 @@ commands.
 
 ### Update 2026-09-18
 The snippet has been reorganized and enhanced. The main addition is that it now has more guidelines on command naming, user interaction and error handling. The idea here is that it's more inclined to give the CLI commands names that make sense to the user instead of mirroring the name of the functions that you're executing.
+
+It also has a section for Python specifically, some quirks and preferred library choice, 
+so that it stops randomizing the implementation.

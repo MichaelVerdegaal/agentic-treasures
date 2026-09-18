@@ -111,7 +111,31 @@ Every piece of hidden state deserves a read-only command that answers the questi
 - Per-command `--help` is the authoritative reference; the README is a guided tour with one runnable example per command, each with a short trailing comment.
 - Document the shape of the tool once, up front: which commands compose and which are jobs. It tells the reader which half of the interface they are in.
 
-## 12. Process rules
+## 12. Python specifics
+
+Skip this section for non-Python tools.
+
+- Use Typer for the command layer. Its type hints double as the parser spec, so the signature is the interface, and `--help` is generated from the same hints and docstrings that document the function.
+- Ship a console entry point so the tool runs as its own name, not `python -m`:
+
+  ```toml
+  [project.scripts]
+  aic = "aic.cli.cli:app"
+  ```
+
+- Also add a `__main__.py` so `python -m aic.cli` works, for environments where the entry point is not on `PATH`:
+
+  ```python
+  """Allow ``python -m aic.cli`` to invoke the CLI."""
+
+  from .cli import app
+
+  app()
+  ```
+
+- The entry point and `__main__.py` both point at the same callable. There is no second wiring path to keep in sync.
+
+## 13. Process rules
 
 - Test the UX invariants, not just the logic: stdout/stderr split, JSON shapes, NUL separation, stdin handling, exit codes, confirmation prompts, invalid flag combinations. A convention without a test disappears in the next refactor.
 - Build for what exists, not what might exist: no speculative flags, actions, or abstraction until a real case needs them. Prefer deleting surface over polishing it. Dead commands, unused options, and secondary interfaces that split the iteration budget should go.
